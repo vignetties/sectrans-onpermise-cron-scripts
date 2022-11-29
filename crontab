@@ -1,0 +1,3 @@
+#SFTP transfer scripts
+#*/5 * * * *     root /opt/allianz/bin/sectransfer/sectransfer.sh
+#* 1 * * * root find /var/opt/allianz/sftptransfer ! -name "*.tmp" \( -path */error/* -o -path */processed/* -o -path */result/* -o -path */storno/* \) -name "*" -type f -mtime +1 -delete
